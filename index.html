@@ -6,17 +6,16 @@
     <title>Document</title>
     <style>
       .noticia{
-        padding-right: .5rem;
-          margin-right: .5rem;
+          margin-right: 30rem;
+          margin-left: 15rem;
           float: left;
       }
       aside{
           font-family: Arial, Helvetica, sans-serif;
           color:whitesmoke;
           font-size: medium;
-          padding-left: .5rem;
-          margin-left: .5rem;
           float: right;
+          
      }
       a{
           color:whitesmoke;
@@ -29,10 +28,9 @@
       }
      .menu{
        font-family: Arial, Helvetica, sans-serif;
-       text-align: center;}
-     .menu ul{display: inline-table;}
-     .menu il{display: inline;} 
-
+       position: fixed;
+       }
+     
      ul{
          color:whitesmoke
      }
@@ -64,27 +62,37 @@
          font-family: Arial, Helvetica, sans-serif;
          font-size: large;
      }
-     .menu li:hover > ul {
-            display:block;
-        }
-        .menu li:hover > ul {
-            display:block;
-        }
+     .menu ul li ul{
+         display:none;
+     }
+     .menu ul li:hover > ul {
+           display:grid;
+           position:absolute;
+           background-color: black;
+     }
+    .footer{
+        height: 4rem;
+     
+
+    }
                </style>
 </head>
 <body style= background-color:black>
+    <header>
     <nav class="menu">
         <ul>
-        <li><a href="">MENU</a>
-            <ul>
+        <li><a href="">MENU
+           <ul> 
             <li id="list"><a href="fanclub.html">Fan Club</a></li>
             <li id="list"><a href="merch.html">Comprar</a></li>
             <li id="list"><a href="contacto.html">Contacto</a></li>
-        
-            </ul>
+        </ul>
+        </a>    
         </li>      
         </ul>
-    </nav>   
+    </nav>  
+</header> 
+
    <div style= text-align:center  >
     <a href="index.html"> <img src="img/metallica-main.jpg" alt="Inicio"
     width= "900px" height="300px";> 
@@ -92,10 +100,17 @@
    </div>
    <div class="noticia">
        <h1>TÌTULO</h1>
-       <p class="texto">Copete. Copete. Copete. Copete. ...</p>
+       <p class="texto">Copete. Copete. Copete. Copete. ...
+       Copete. Copete. Copete. Copete. ...
+       Copete. Copete. Copete. Copete. ...
+       Copete. Copete. Copete. Copete. ...
+       Copete. Copete. Copete. Copete. ...
+       Copete. Copete. Copete. Copete. ...
+       </p>
     </div>
     
-    <aside>
+
+   <aside>
         <h2>Proximas presentaciones</h2>
         <ul>
             <li>FECHA Lugar <a href="link externo.html">Ticket</a></li>
@@ -103,5 +118,10 @@
             <li>FECHA Lugar <a href="link externo.html">Ticket</a></li>
         </ul>
     </aside>
+
+    <footer class="footer">
+        <p class="texto">Copyright 2021</p>
+    </footer>
+    
 </body>
 </html>
