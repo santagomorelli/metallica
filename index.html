@@ -3,79 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      .noticia{
-          margin-right: 30rem;
-          margin-left: 15rem;
-          float: left;
-      }
-      aside{
-          font-family: Arial, Helvetica, sans-serif;
-          color:whitesmoke;
-          font-size: medium;
-          float: right;
-          
-     }
-      a{
-          color:whitesmoke;
-      }
-      a:link{
-          text-decoration: none;
-      }  
-      a:hover{
-        color:lightblue;
-      }
-     .menu{
-       font-family: Arial, Helvetica, sans-serif;
-       position: fixed;
-       }
-     
-     ul{
-         color:whitesmoke
-     }
-     #list{
-          display: inline;
-          list-style-type: none;
-          padding-right: 60px;
-          float: left;
-     }   
-     img{
-         border:3px solid black;
-     }
-     img:hover{
-         border: 3px solid lightblue;    
-     }
-     
-     h1{
-         color:whitesmoke;
-         font-family: Arial, Helvetica, sans-serif;
-         font-size: xx-large;
-     }
-     h2{
-         color:whitesmoke;
-         font-family: Arial, Helvetica, sans-serif;
-         font-size: x-large;
-     }
-     .texto{
-         color:whitesmoke;
-         font-family: Arial, Helvetica, sans-serif;
-         font-size: large;
-     }
-     .menu ul li ul{
-         display:none;
-     }
-     .menu ul li:hover > ul {
-           display:grid;
-           position:absolute;
-           background-color: black;
-     }
-    .footer{
-        height: 4rem;
-     
-
-    }
-               </style>
+    <title>METALLICA</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body style= background-color:black>
     <header>
@@ -90,15 +20,17 @@
         </a>    
         </li>      
         </ul>
-    </nav>  
+    </nav> 
+    <div style= text-align:center  >
+        <a href="index.html"> <img src="img/metallica-main.jpg" alt="Inicio"
+        width= "900px" height="300px";> 
+        </a>       
+       </div> 
 </header> 
 
-   <div style= text-align:center  >
-    <a href="index.html"> <img src="img/metallica-main.jpg" alt="Inicio"
-    width= "900px" height="300px";> 
-    </a>       
-   </div>
-   <div class="noticia">
+   
+   <main>
+   <section class="noticia">
        <h1>TÌTULO</h1>
        <p class="texto">Copete. Copete. Copete. Copete. ...
        Copete. Copete. Copete. Copete. ...
@@ -107,7 +39,7 @@
        Copete. Copete. Copete. Copete. ...
        Copete. Copete. Copete. Copete. ...
        </p>
-    </div>
+    </section>
     
 
    <aside>
@@ -118,7 +50,7 @@
             <li>FECHA Lugar <a href="link externo.html">Ticket</a></li>
         </ul>
     </aside>
-
+</main>
     <footer class="footer">
         <p class="texto">Copyright 2021</p>
     </footer>
